@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: 1366px 640px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+#main_nav{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 2px;
+    left: 0px;
+}
+#main_nav>a{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+#main_nav>a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    width: fit-content;
+    text-align: center;
+  }
+  
+#main_nav>a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fd9619;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#main_nav>a:hover::before {
+  transform: scaleX(1);
+}
+
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 80px;	
+}
+.banner-text p{
+	font-size: 20px;
+	font-style: italic;
+}
+.banner-text h1{
+	font-size: 50px;
+	font-family: 'Kaushan Script', cursive;
+}
+.banner-btn{
+	margin: 70px auto 0;
+}
+
+.banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #fff;
+	font-weight: 600;
+	border: .5px solid #fd9619;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+}
+.banner-btn a:hover{
+	color: #000;
+}
+
+.banner-btn a span{
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	background-color: #fd9619;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.banner-btn a:hover span{
+	width: 100%;
+}
+
+#header_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    color: #ffffff;
+    font-weight: 500;
+	
+}
+#article_Logo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(253, 150, 25);
+    margin-bottom: 30px;
+}
+
+#feature{
+	background-image: url(../images/bg.jpg);
+	width: 100%;
+	padding: 70px 0;
+}
+
+.title-text{
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.title-text p{
+	margin: auto;
+	margin-bottom:0;
+	font-size: 20px;
+	color: rgb(253, 150, 25);
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+.title-text p::after{
+	content: '';
+	width: 50px;
+	height: 35px;
+	background: linear-gradient(rgb(253, 150, 25),#fff);
+	position: absolute;
+	top: -20px;
+	left: 0;
+	z-index: -1;
+	transform: rotate(10deg);
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+
+.title-text h1{
+	font-size: 50px;
+	font-family: 'Kaushan Script', cursive;
+}
+
+#article_Logo>div{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+    box-shadow: 2px 1.5px 4px 2px #858585;
+}
+#article_Logo>div>img{
+    width: 300px;
+    height: 370px;
+}
+#article_Logo>div>figcaption{
+    border: 1px #fd9619 dashed;
+}
+
+#grid1,#grid3{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+#grid2{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#grid1>div,#grid2>div,#grid3>div{
+    height: 300px;
+    background-size: 112%;
+    background-position: center;
+    opacity: 0.5;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 300;
+
+    -webkit-transition: opacity 1s linear,background-size 1s ease;
+    -moz-transition: opacity 1s linear,background-size 1s ease;
+    -ms-transition: opacity 1s linear,background-size 1s ease;
+    transition: opacity 2s linear,background-size 1s ease;
+
+}
+#grid1>div:hover,#grid2>div:hover,#grid3>div:hover{
+    opacity: 1;
+    background-size: 120%;
+}
+h2{
+    background-color: #813772;
+}
+@media screen and (max-width:800px) {
+    body{
+        background-image: url(../images/restaurant.jpg);
+        background-repeat: no-repeat;
+        background-size: 800px 640px;      
+    }
+}
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(../images/restaurant.jpg);
+        background-repeat: no-repeat;
+        background-size: 600px 640px;      
+    }
+    #grid1,#grid3{
+        display: block;
+    }
+    #grid2{
+        display: block;
+    }
+    #grid1>div,#grid2>div,#grid3>div{
+        background-size: cover;
+    }
+}
+@media screen and (max-width:1000px) {
+    #grid1>div,#grid2>div,#grid3>div{
+        background-size: 130%;
+    }
+}
+@media screen and (max-width:830px) {
+    #grid1>div,#grid2>div,#grid3>div{
+        background-size: 150%;
+    }
+    #grid1>div:hover,#grid2>div:hover,#grid3>div:hover{
+        background-size: 140%;
+    }
+}
+@media screen and (max-width:730px) {
+    #grid1>div,#grid2>div,#grid3>div{
+        background-size: 200%;
+    }
+    #grid1>div:hover,#grid2>div:hover,#grid3>div:hover{
+        background-size: 190%;
+    }
+}
+
+#footer{
+	padding: 100px 0 20px;
+	background: #efefef;
+}
+
+.footer-row{
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer-left, .footer-right{
+	flex-basis: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.footer-right{
+	text-align: right;
+}
+
+.footer-row h1{
+	margin: 10px 0;
+}
+
+.footer-row p{
+	line-height: 35px;
+}
+
+.footer-left .far, .footer-right .fa{
+	font-size: 20px;
+	color: rgb(253, 150, 25);
+	margin: 10px;
+}
+
+.social-links{
+	text-align: center;
+}
+
+.social-links .fab{
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	border: 1px solid rgb(253, 150, 25);
+	margin: 40px 5px 0;
+	color: rgb(253, 150, 25);
+	cursor: pointer;
+	transition: .5s;
+}
+
+.social-links .fab:hover{
+	background: rgb(253, 150, 25);
+	color: #fff;
+	transform: translateY(-7px);
+	
+}

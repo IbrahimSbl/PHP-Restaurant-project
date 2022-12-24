@@ -1,0 +1,189 @@
+#menu_content_out{
+    display: flex;
+    justify-content: center;
+}
+#menu_content{
+    width: fit-content;
+    align-items: stretch;
+}
+#menu_content>form{
+    margin-top: 30px;
+}
+#main_title{
+    display: flex;
+    justify-content: space-between;
+}
+#main_title>a>img{
+    height: 30px;
+    width: 30px;
+    margin-right: 65px;
+    margin-top: 30px;
+    background-color: transparent;
+}
+table{
+    font-size: x-large;
+}
+th{
+    width:191px;
+}
+tr:nth-child(even){
+    background-color: rgb(240, 240, 240);
+}
+.title{
+    text-align:center;
+    font-size: 30;
+}
+td>a>img{
+    width: 30px;
+    height: 30px;
+}
+td>input[type="text"]{
+    font-size: initial;
+    border-color: violet;
+    border-radius: 10px;
+    color: linear-gradient(voilet,red);
+}
+.deletebtn{
+    background-image: url(../images/delete.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: transparent;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.updatebtn{
+    background-image: url(../images/update.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: transparent;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+}
+.addbtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.addbtn>a>img{
+    width: 30px;
+    height: 30px;
+}
+
+/** START ADMIN LOGIN PAGE STYLE ****/
+
+.login 
+{
+    max-width: 560px;
+    background: #fff;
+    position: relative;
+    margin: 15px auto;
+    padding: 55px 85px 55px 85px;
+    -webkit-box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+    box-shadow: 0px 50px 100px 0px rgba(64, 1, 4, 0.1), 0px -6px 0px 0px rgba(248, 99, 107, 0.004);
+    border-radius: 3px;    
+}
+
+@media (max-width: 560px) 
+{
+    .login 
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+.login input[type="text"],
+.login input[type="password"]
+{
+    border: 1px solid #e6e6e6;
+    box-shadow: none;
+    color: #555555;
+    line-height: 1.2;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    height: 55px;
+    padding: 0 25px 0 25px;
+    border-bottom-right-radius: 2px !important;
+    border-top-right-radius: 2px !important;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus
+{
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+
+.login button[type="submit"] 
+{
+    background: #28d;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    line-height: 40px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+}
+
+.login button[type="submit"]:hover 
+{
+    background: #17c;
+}
+
+/* Buttons' focus effect */
+.login button[type="submit"]:focus 
+{
+    border-color: #05a;
+}
+
+.login .forgotPW
+{
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.login100-form-title 
+{
+    font-size: 30px;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    display: block;
+    padding-bottom: 32px;
+}
+
+
+.login .txt1
+{
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.4;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    display: block;
+    font-weight: bold;
+}
+
+.login .form-input 
+{
+    margin-bottom: 50px;
+}
+
+
+
+/** END ADMIN LOGIN PAGE STYLE ****/
+
+
+
